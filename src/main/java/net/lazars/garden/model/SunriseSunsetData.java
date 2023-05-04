@@ -8,6 +8,6 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class SunriseSunsetData {
 
-  @JsonProperty("nautical_twilight_end")
-  private String nauticalTwilightEnd;
+  @JsonProperty("civil_twilight_end")
+  private String twilightEnd;
 }

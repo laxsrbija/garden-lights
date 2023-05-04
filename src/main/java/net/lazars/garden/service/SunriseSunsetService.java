@@ -58,7 +58,7 @@ public class SunriseSunsetService {
 
     final SunriseSunsetResponse sunriseSunsetResponse = response.body();
     if (sunriseSunsetResponse != null) {
-      final String sunset = sunriseSunsetResponse.getResults().getNauticalTwilightEnd();
+      final String sunset = sunriseSunsetResponse.getResults().getTwilightEnd();
       sunsetData = Instant.parse(sunset);
       log.info("Loaded sunset data: {}", sunsetData);
     } else {
