@@ -1,0 +1,10 @@
+garden:
+  location:
+    latitude: 43.321229880003045
+    longitude: 21.895672594506983
+    zone: Europe/Belgrade
+  lights:
+    turn-off: 0 0 0 * * ?
+  switch:
+    token: TOKEN
+    device-id: DEVICE_ID
