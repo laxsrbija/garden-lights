@@ -5,7 +5,7 @@ COPY . .
 
 RUN mvn -B clean package
 
-FROM eclipse-temurin:17-jre
+FROM eclipse-temurin:17.0.9_9-jre
 
 WORKDIR /opt/garden-lights
 COPY --from=build /tmp/target/garden-lights-0.0.1-SNAPSHOT.jar .
