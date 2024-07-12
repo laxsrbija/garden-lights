@@ -1,0 +1,16 @@
+ktor:
+    application:
+        modules:
+            - net.lazars.garden.ApplicationKt.gardenLights
+    deployment:
+        port: 8080
+garden:
+    location:
+        latitude: 43.321229880003045
+        longitude: 21.895672594506983
+        zone: UTC
+    lights:
+        turn-off: "23:00"
+    switch:
+        token: TOKEN
+        device-id: DEVICE_ID
