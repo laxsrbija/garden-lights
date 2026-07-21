@@ -5,7 +5,7 @@ COPY . .
 
 RUN gradle buildFatJar
 
-FROM eclipse-temurin:21-jre
+FROM eclipse-temurin:25-jre
 
 WORKDIR /opt/garden-lights
 COPY --from=build /tmp/build/libs/garden-lights.jar .
