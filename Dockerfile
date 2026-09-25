@@ -1,4 +1,4 @@
-FROM gradle:8 AS build
+FROM gradle:9 AS build
 
 WORKDIR /tmp
 COPY . .
